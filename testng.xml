@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/sameershintre/IdeaProjects/APIAutomationPrograms">
+    <classes><class name="com.MyFiles.ex_03_TestNG_AllureReoprt.Lab006_TestNG">
+        <methods>
+            <include name="TC1ValidPIN"/>
+            <include name="TC22SplCharPin"/>
+            <include name="TC3BlankPin"/>
+        </methods>
+    </class>
+    </classes>
+</test>
+</suite>
