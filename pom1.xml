@@ -13,8 +13,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-      <maven.compiler.source>8</maven.compiler.source>    <!-- or 11, or 8 -->
-      <maven.compiler.target>8</maven.compiler.target>    <!-- match your JDK version -->
+      <maven.compiler.source>24</maven.compiler.source>    <!-- or 11, or 8 -->
+      <maven.compiler.target>24</maven.compiler.target>    <!-- match your JDK version -->
 
 
   </properties>
@@ -42,32 +42,14 @@
       <version>2.29.1</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.11.0</version>
-      <scope>test</scope>
-    </dependency>
-
   </dependencies>
 
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.1.2</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile> <!-- your testng.xml path -->
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-
-      <plugin>
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>
-        <version>2.11.2</version>
+        <version>2.29.1</version>
       </plugin>
     </plugins>
   </build>
